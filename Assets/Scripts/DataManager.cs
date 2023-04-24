@@ -4,15 +4,29 @@ using UnityEngine;
 
 public class DataManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static DataManager Instance;
+    public int ObjectType { get; private set; }
+    public int ColorType { get; private set; }
+    public int SizeType { get; private set; }
+    public bool PhysicsStatus{ get; private set; }
+    
+    private void Awake()
     {
-        
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void GetDataToUse(int objectType, int colorType, int sizeType, bool physicsStatus)
     {
-        
+        ObjectType = objectType;
+        ColorType = colorType;
+        SizeType = sizeType;
+        PhysicsStatus = physicsStatus;
     }
 }
