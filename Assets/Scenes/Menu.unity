@@ -858,7 +858,7 @@ RectTransform:
   m_Children:
   - {fileID: 1821025384}
   m_Father: {fileID: 1399992156}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -908,7 +908,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 359536905}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1399992157}
+        m_TargetAssemblyTypeName: MenuUI, Assembly-CSharp
+        m_MethodName: StartButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &359536905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1685,7 +1697,7 @@ RectTransform:
   - {fileID: 1722898678}
   - {fileID: 303325182}
   m_Father: {fileID: 1399992156}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3669,10 +3681,10 @@ RectTransform:
   m_Children:
   - {fileID: 1390452061}
   - {fileID: 1759115556}
-  - {fileID: 1593323706}
-  - {fileID: 696872784}
   - {fileID: 359536903}
   - {fileID: 1690039029}
+  - {fileID: 1593323706}
+  - {fileID: 696872784}
   - {fileID: 1203230030}
   - {fileID: 1046928360}
   - {fileID: 143038271}
@@ -3699,6 +3711,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 438d9f6840cee354d93736f0b7d71076, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startButton: {fileID: 359536904}
+  exitButton: {fileID: 1690039030}
+  objectDropdown: {fileID: 696872785}
+  colorDropdown: {fileID: 1046928361}
+  sizeDropdown: {fileID: 20093590}
+  physicsYN: {fileID: 1394260866}
 --- !u!1 &1401601002
 GameObject:
   m_ObjectHideFlags: 0
@@ -4612,7 +4630,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1399992156}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4749,7 +4767,7 @@ RectTransform:
   m_Children:
   - {fileID: 493541093}
   m_Father: {fileID: 1399992156}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
