@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MenuUI : MonoBehaviour
-{
+{   
+    // Encapsulation
     [SerializeField] private Button startButton;
     [SerializeField] private Button exitButton;
     [SerializeField] private GameObject warningText;

@@ -59,6 +59,7 @@ public class Shape : MonoBehaviour
 
         }
     }
+    // Abstraction
     private float GetRandomNumber(float min, float max)
     {
         float random;
