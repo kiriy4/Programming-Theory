@@ -25,6 +25,7 @@ public class Shape : MonoBehaviour
         {
             shapeRb.useGravity = false;
         }
+
         colorIndex = DataManager.Instance.ColorType;
         sizeIndex = DataManager.Instance.SizeType;
         SetColor(colorIndex);
@@ -32,7 +33,7 @@ public class Shape : MonoBehaviour
         
     }
 
-    void SetColor(int index)
+    public virtual void SetColor(int index)
     {
         minValue = 0.0f;
         maxValue = 1.0f;
