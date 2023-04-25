@@ -1895,7 +1895,7 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: Capsule
       m_Image: {fileID: 0}
-    - m_Text: Cilinder
+    - m_Text: Cylinder
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
